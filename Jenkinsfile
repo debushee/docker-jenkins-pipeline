@@ -4,9 +4,9 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                docker build -t docker-jenkins-pipeline:latest .
+                docker build -t debushee/docker-jenkins-pipeline:latest .
                 '''
-            }
+            }   
         }
         stage('Push') {
             steps {
